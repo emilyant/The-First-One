@@ -1,0 +1,306 @@
+ *{
+  scroll-behavior: smooth;
+ }
+  
+  body{
+    margin:0;
+  }
+  /*________________Header_________________ */
+  header{
+    top:0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 15px;
+  }
+  #Logo{
+    font-family: 'Lobster Two', sans-serif;
+    text-decoration:none;
+    font-size: 20px;
+    color: #940B92;
+  }
+  header ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Onest', sans-serif;
+    text-decoration: none;
+  }
+  header ul li{
+    list-style:none;
+  }
+  header ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  header ul li a:hover{
+    background: #E9B824;
+    color: white;
+  }
+  #LogoImg{
+      width: 30px;
+      height: 30px;
+      border-radius:100%;
+  }
+  .container{
+    transition: transform .5s;
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  /*________________Messages_________________ */
+  
+  .MainPage{
+    width: 900;
+    max-width: 90vw;
+    height:90%;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2hVP4exJv0biL874fh2Jcuqe_F4FOAjqo6ZjXwl5QnXn9HAs6LnJ4rEwvsiPzsflftCe866-N1ecnboQ9FAynYeUuz8QY6Ch14AdJ3_zEkK7s41D-qSrTiBa8RdcXpW04-Ko2vC_KiO17nymHcL-ddiwfEHX6tAhquluZOA4jQl2QGqS1c2IrrDB_xVnl/w652-h307/Raquel%20An%20Icon.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #FirstMes{
+    font-size: 80px;
+    color: #E9B824;
+    border: 25px white;
+     text-shadow: 5px 0 0 white, -5px 0 0 white, 0 5px 0 white, 0 -5px 0 white, 4px 4px white, -4px -4px 0 white, 4px -4px 0 white, -4px 4px 0 white;
+    font-family: 'Lobster Two', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    position:relative;
+    text-align: left;
+    left: 50px;
+    width: 750px;
+  }
+  
+  #SecondMes{
+    font-size: 35px;
+    font-family: 'Onest', sans-serif;
+    font-style: regular;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-align: left;
+    left: 50px;
+    position:relative;
+    background: black;
+    width: 420px;
+    color: white;
+  }
+  
+  #ThirdMes{
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    font-family: 'Onest', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    position:relative;
+    left: 50px;
+    width: 550px;
+  }
+  
+  /*________________Buttons_________________ */
+  #TitleCloset{
+    font-size: 35px;
+    color: #E9B824;
+    font-family: 'Onest', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-content: center;
+  }
+
+  .ItemsCloset .Item img{
+    max-width: 70%;
+    max-height: 85%;
+    filter: drop-shadow(0px 50px 20px #0009);
+  }
+  .ItemsCloset{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+  }
+  .ItemsCloset .Item:hover{
+    padding: 25px;
+    transition: .4s;
+    filter: drop-shadow(0px 20px 20px #0009);
+  }
+  .ItemsCloset .Item{
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: gainsboro;
+  }
+  .ItemsCloset .Item h2{
+    font-weight: 600;
+    font-family: 'Onest', sans-serif;
+  }
+  .ItemsCloset .Item .AddToOutfit{
+    font-family: 'Onest', sans-serif;
+    font-size: 16px large;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color:#940B92;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .ItemsCloset .Item .AddToOutfit:hover{
+    background-color: black;
+  }
+
+  .OutfitCart{
+    width: 400px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+  }
+  body.ShowCart .OutfitCart{
+    inset: 0 0 0 auto;
+  }
+  body.ShowCart .container{
+    transform: translateX(-250px);
+  }
+  .OutfitCart h1{
+    font-family: 'Onest', sans-serif;
+    padding: 20px;
+    margin: 0;
+    font-weight: 600;
+  }
+  .OutfitCart .btnCart{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .OutfitCart .btnCart .CreateOutfit{
+    background-color: #E9B824;
+    text-decoration: none;
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: medium;
+    color: black;
+    padding: 25px 25px;
+    text-align: center;
+  }
+  .OutfitCart .btnCart .CreateOutfit:hover{
+    background-color: white;
+    color: black;
+  }
+  .OutfitCart .btnCart .close:hover{
+    background-color: white;
+    color: black;
+  }
+  .OutfitCart .btnCart .close{
+    background-color: #940B92;
+    color: white;
+    border: none;
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    cursor: pointer;
+  }
+
+  .OutfitCart .OutfitItems{
+    font-family: 'Onest', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .OutfitCart .OutfitItems img{
+    width: 100%;
+    max-height: 100%;
+  }
+  .OutfitCart .OutfitItems .ItemClone{
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+  }
+  .OutfitItems .cart-remove{
+    cursor: pointer;
+    font-size: 24px;
+    color: #E9B824;
+  }
+  .OutfitItems .cart-remove:hover{
+    color: white;
+  }
+  .OutfitItems .ItemClone:nth-child(even){
+    background-color: white;
+    color: black;
+  }
+
+/*Created Outfit*/
+/*.createdOutfitLayout{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  padding: 20px;
+}
+.createdOutfitLayout .right{
+  border-radius: 20px;
+  margin: auto;
+  background-color: #940B92;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.createdOutfitLayout .list img{
+  max-height: 160px;
+}
+.Accept{
+  width:100%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Onest', sans-serif;
+  font-weight: 400;
+  background-color:gainsboro;
+}
+.Accept:hover{
+  background-color: black;
+  color: white;
+}
+.returnCart .list .itemSelected img{
+  width: 110px;
+}
+.returnCart .list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: auto;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+.returnCart .itemSelected{
+  box-shadow: 0 10px 20px #0009;
+  width: 110px;
+  background-color: gainsboro;
+  border-radius: 20px;
+}

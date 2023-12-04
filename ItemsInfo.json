@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "TOP 1",
+        "image": "img/Tops/Top 1.png"
+    },
+    {
+        "id": 2,
+        "name": "TOP 2",
+        "image": "img/Tops/Top 2.png"
+    },
+    {
+        "id": 3,
+        "name": "TOP 3",
+        "image": "img/Tops/Top 3.png"
+    },
+    {
+        "id": 4,
+        "name": "TOP 4",
+        "image": "img/Tops/Top 4.png"
+    },
+    {
+        "id": 5,
+        "name": "BOTTOM 1",
+        "image": "img/Bottoms/Bottom 1.png"
+    },
+    {
+        "id": 6,
+        "name": "BOTTOM 2",
+        "image": "img/Bottoms/Bottom 2.png"
+    },
+    {
+        "id": 7,
+        "name": "BOTTOM 3",
+        "image": "img/Bottoms/Bottom 3.png"
+    },
+    {
+        "id": 8,
+        "name": "BOTTOM 4",
+        "image": "img/Bottoms/Bottom 4.png"
+    },
+    {
+        "id": 9,
+        "name": "SHOES 1",
+        "image": "img/Shoes/Shoes 1.png"
+    },
+    {
+        "id": 10,
+        "name": "SHOES 2",
+        "image": "img/Shoes/Shoes 2.png"
+    },
+    {
+        "id": 11,
+        "name": "SHOES 3",
+        "image": "img/Shoes/Shoes 3.png"
+    },
+    {
+        "id": 12,
+        "name": "SHOES 4",
+        "image": "img/Shoes/Shoes 4.png"
+    },
+    {
+        "id": 13,
+        "name": "ACCESSORY 1",
+        "image": "img/Accesories/Acc 1.png"
+    },
+    {
+        "id": 14,
+        "name": "ACCESSORY 2",
+        "image": "img/Accesories/Acc 2.png"
+    },
+    {
+        "id": 15,
+        "name": "ACCESSORY 3",
+        "image": "img/Accesories/Acc 3.png"
+    },
+    {
+        "id": 16,
+        "name": "ACCESSORY 4",
+        "image": "img/Accesories/Acc 4.png"
+    }
+] 
